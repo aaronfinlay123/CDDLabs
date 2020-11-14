@@ -8,6 +8,7 @@
 
    Uses C++11 features such as mutex and condition variables to implement an example of a rendezvous for threads
     \dev: aaron f, c00226131
+    it carlow, 4th year soft dev
 
 */
 /*! displays a message that is split in to 2 sections to show how a rendezvous works
