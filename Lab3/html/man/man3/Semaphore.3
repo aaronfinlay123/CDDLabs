@@ -1,0 +1,38 @@
+.TH "Semaphore" 3 "Sat Nov 14 2020" "CDDLabs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Semaphore \- A \fBSemaphore\fP Implementation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Semaphore\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSemaphore\fP (unsigned int uiCount=0)"
+.br
+.ti -1c
+.RI "void \fBWait\fP ()"
+.br
+.ti -1c
+.RI "template<typename R , typename P > bool \fBWait\fP (const std::chrono::duration< R, P > &crRelTime)"
+.br
+.ti -1c
+.RI "void \fBSignal\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBSemaphore\fP Implementation\&. 
+
+Uses C++11 features such as mutex and condition variables to implement \fBSemaphore\fP 
+.PP
+Definition at line 14 of file Semaphore\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CDDLabs from the source code\&.

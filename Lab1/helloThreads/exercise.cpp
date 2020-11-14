@@ -1,0 +1,13 @@
+/* Author: Aaron Finlay
+   Date: 30/10/20
+*/
+
+#include <stdio.h>
+int main(void)
+{
+
+  PROJECT_NAME = 
+	int i;
+	for(i=0;i<10;i++)
+		printf("%d",i);
+}
