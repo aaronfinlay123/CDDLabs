@@ -1,0 +1,70 @@
+.TH "main.cpp" 3 "Sat Nov 21 2020" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Semaphore\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBupdateTask\fP (std::shared_ptr< \fBSemaphore\fP > mutex, int numUpdates)"
+.br
+.RI "An Implementation of Mutual Exclusion using Semaphores\&. "
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.RI "An Implementation of Mutual Exclusion using Semaphores with the semaphore set to 1, this allows whatever thread to get there first to run\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBsharedVariable\fP =0"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "main (void)"
+
+.PP
+An Implementation of Mutual Exclusion using Semaphores with the semaphore set to 1, this allows whatever thread to get there first to run\&. < Launch the threads
+.PP
+< Join the threads with the main thread 
+.PP
+Definition at line 26 of file main\&.cpp\&.
+.SS "updateTask (std::shared_ptr< \fBSemaphore\fP > mutex, int numUpdates)"
+
+.PP
+An Implementation of Mutual Exclusion using Semaphores\&. displays a message that is split in to 2 sections to show how a rendezvous works
+.PP
+\fBParameters:\fP
+.RS 4
+\fImutex\fP creates a mutual exclusion 
+.br
+\fInumUpdates\fP increment one thread, then the other showing mutual exclusion Uses C++11 features such as mutex and condition variables to implement an example of a rendezvous for threads 
+.RE
+.PP
+
+.PP
+Definition at line 14 of file main\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "int sharedVariable =0"
+
+.PP
+Definition at line 6 of file main\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

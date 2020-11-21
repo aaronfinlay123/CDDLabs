@@ -1,0 +1,56 @@
+.TH "Semaphore" 3 "Sat Nov 21 2020" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Semaphore \- A \fBSemaphore\fP Implementation Uses C++11 features such as mutex and condition variables to implement \fBSemaphore\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Semaphore\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSemaphore\fP (unsigned int uiCount=0)"
+.br
+.ti -1c
+.RI "void \fBWait\fP ()"
+.br
+.ti -1c
+.RI "template<typename R , typename P > bool \fBWait\fP (const std::chrono::duration< R, P > &crRelTime)"
+.br
+.ti -1c
+.RI "void \fBSignal\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBSemaphore\fP Implementation Uses C++11 features such as mutex and condition variables to implement \fBSemaphore\fP\&. 
+.PP
+Definition at line 10 of file Semaphore\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Semaphore::Semaphore (unsigned int uiCount = \fC0\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 17 of file Semaphore\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Semaphore::Signal ()"
+
+.PP
+Definition at line 32 of file Semaphore\&.cpp\&.
+.SS "void Semaphore::Wait ()"
+
+.PP
+Definition at line 11 of file Semaphore\&.cpp\&.
+.SS "template<typename R , typename P > bool Semaphore::Wait (const std::chrono::duration< R, P > & crRelTime)"
+
+.PP
+Definition at line 18 of file Semaphore\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.
